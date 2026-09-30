@@ -1,0 +1,14 @@
+{
+  "name": "handlebars-parcel-products",
+  "version": "1.0.0",
+  "description": "Каталог товарів на Handlebars і Parcel",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "parcel-transformer-hbs": "^1.0.4"
+  }
+}

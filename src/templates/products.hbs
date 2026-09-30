@@ -1,0 +1,17 @@
+{{#each products}}
+  <li class="product-card">
+    <article>
+      <div class="product-card__topline">
+        <span class="product-card__id">#{{id}}</span>
+        <strong class="product-card__price">${{price}}</strong>
+      </div>
+      <h3>{{name}}</h3>
+      <p>{{description}}</p>
+      <button class="delete-button" type="button" data-id="{{id}}" aria-label="Видалити {{name}}">
+        Видалити
+      </button>
+    </article>
+  </li>
+{{else}}
+  <li class="empty-state">У каталозі ще немає товарів.</li>
+{{/each}}
